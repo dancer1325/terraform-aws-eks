@@ -1,8 +1,8 @@
 # AWS EKS Terraform module
 
-Terraform module which creates Amazon EKS (Kubernetes) resources
-
-[![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
+* Terraform module 
+  * allows
+    * creating Amazon EKS (Kubernetes) resources
 
 ## [Documentation](https://github.com/terraform-aws-modules/terraform-aws-eks/blob/master/docs)
 
@@ -18,8 +18,6 @@ Terraform module which creates Amazon EKS (Kubernetes) resources
 
 ### External Documentation
 
-Please note that we strive to provide a comprehensive suite of documentation for __*configuring and utilizing the module(s)*__ defined here, and that documentation regarding EKS (including EKS managed node group, self managed node group, and Fargate profile) and/or Kubernetes features, usage, etc. are better left up to their respective sources:
-
 - [AWS EKS Documentation](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html)
 - [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 
@@ -27,6 +25,7 @@ Please note that we strive to provide a comprehensive suite of documentation for
 
 ### EKS Auto Mode
 
+* TODO:
 ```hcl
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
@@ -533,12 +532,3 @@ We are grateful to the community for contributing bugfixes and improvements! Ple
 | <a name="output_self_managed_node_groups_autoscaling_group_names"></a> [self\_managed\_node\_groups\_autoscaling\_group\_names](#output\_self\_managed\_node\_groups\_autoscaling\_group\_names) | List of the autoscaling group names created by self-managed node groups |
 <!-- END_TF_DOCS -->
 
-## License
-
-Apache 2 Licensed. See [LICENSE](https://github.com/terraform-aws-modules/terraform-aws-eks/tree/master/LICENSE) for full details.
-
-## Additional information for users from Russia and Belarus
-
-* Russia has [illegally annexed Crimea in 2014](https://en.wikipedia.org/wiki/Annexation_of_Crimea_by_the_Russian_Federation) and [brought the war in Donbas](https://en.wikipedia.org/wiki/War_in_Donbas) followed by [full-scale invasion of Ukraine in 2022](https://en.wikipedia.org/wiki/2022_Russian_invasion_of_Ukraine).
-* Russia has brought sorrow and devastations to millions of Ukrainians, killed hundreds of innocent people, damaged thousands of buildings, and forced several million people to flee.
-* [Putin khuylo!](https://en.wikipedia.org/wiki/Putin_khuylo!)
