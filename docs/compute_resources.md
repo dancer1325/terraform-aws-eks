@@ -7,13 +7,13 @@
 - [Fargate Profiles](https://github.com/terraform-aws-modules/terraform-aws-eks/blob/master/docs/compute_resources.md#fargate-profiles)
 - [Default Configurations](https://github.com/terraform-aws-modules/terraform-aws-eks/blob/master/docs/compute_resources.md#default-configurations)
 
-ℹ️ Only the pertinent attributes are shown below for brevity
-
 ### EKS Managed Node Groups
 
-Refer to the [EKS Managed Node Group documentation](https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups.html) documentation for service related details.
+* [EKS Managed Node Group documentation](https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups.html)
 
-1. The module creates a custom launch template by default to ensure settings such as tags are propagated to instances. Please note that many of the customization options listed [here](https://github.com/terraform-aws-modules/terraform-aws-eks/tree/master/modules/eks-managed-node-group#Inputs) are only available when a custom launch template is created. To use the default template provided by the AWS EKS managed node group service, disable the launch template creation by setting `use_custom_launch_template` to `false`:
+1. module creates -- , by default, a -- custom launch template  to ensure settings such as tags are propagated to instances
+   1. Please note that many of the customization options listed [here](https://github.com/terraform-aws-modules/terraform-aws-eks/tree/master/modules/eks-managed-node-group#Inputs) are only available when a custom launch template is created
+   2. To use the default template provided by the AWS EKS managed node group service, disable the launch template creation by setting `use_custom_launch_template` to `false`:
 
 ```hcl
   eks_managed_node_groups = {
